@@ -1,4 +1,5 @@
 # secrets
+endorsystems/secrets.py
 mysql-*
 
 # Byte-compiled / optimized / DLL files
