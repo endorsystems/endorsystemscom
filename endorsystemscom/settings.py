@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
-from secrets import *
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -24,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Generate new key:
 # python -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())'
 # This is stored in a non-git file secrets.py
-#SECRET_KEY = ''
+SECRET_KEY = '$0ir$m28(s0d5^66dugp!ltqvn+i96wa-@)m=7!7s9rd-ly64z'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -79,7 +78,7 @@ WSGI_APPLICATION = 'endorsystemscom.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'mysql.connector.django',
+        'ENGINE': 'django.db.backends.mysql',
         'USER': 'django',
         'PASSWORD': 'django',
         'HOST': 'db',
